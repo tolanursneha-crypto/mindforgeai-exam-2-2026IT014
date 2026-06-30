@@ -1,0 +1,55 @@
+START
+
+INPUT student performance dataset
+(student_id, name, department,
+attendance_pct, diary_entries,
+tasks_completed, assignment_score,
+lab_score)
+
+IF dataset is missing OR required columns are absent
+    Print "Validation Error"
+    STOP
+
+FOR each student
+
+    Read attendance, diary entries,
+    tasks completed, assignment score,
+    and lab score
+
+    IF any numeric value is missing
+        Replace missing value with 0
+
+    Calculate readiness_score
+
+    IF readiness_score < 45
+        Band = "Support"
+
+    ELSE IF readiness_score < 70
+        Band = "Developing"
+
+    ELSE IF readiness_score < 90
+        Band = "Strong"
+
+    ELSE
+        Band = "Excellent"
+
+    Store readiness_score and performance band
+
+END FOR
+
+GROUP students by department
+
+Calculate department average readiness score
+
+Find highest readiness score as Top Performer
+
+Filter students whose band is "Support"
+
+OUTPUT:
+1. Cleaned dataset
+2. Department average
+3. Top performer
+4. Support student list
+5. Three final insights
+
+END

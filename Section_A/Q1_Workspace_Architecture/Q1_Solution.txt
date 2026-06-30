@@ -1,0 +1,28 @@
+Start
+   │
+   ▼
+VS Code
+(Code Writing)
+   │
+   ▼
+Local Jupyter Notebook
+(Test Python Code)
+   │
+   ▼
+Google Colab
+(Run Online & Share)
+   │
+   ▼
+GitHub Repository
+(Store Version & Backup)
+   │
+   ▼
+Google Drive Submission Folder
+(Upload Required Files)
+   │
+   ▼
+Final Portal Submission
+(Submit Exam)
+   │
+   ▼
+End
